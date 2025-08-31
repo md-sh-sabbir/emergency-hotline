@@ -20,11 +20,11 @@
 <body>
     <header>
         <!-- Navbar starts here -->
-        <nav class="w-[87.5%] mx-auto font-[Inter] my-3 py-3 flex justify-between">
-            <div class="nav_brand">
+        <nav class="w-[87.5%] mx-auto font-[Inter] my-3 py-3 flex flex-col md:flex-row justify-center md:justify-between gap-5">
+            <div class="nav_brand flex justify-center md:justify-start">
                 <img src="assests/images/nav-logo.png" alt="">
             </div>
-            <div class="nav_options">
+            <div class="nav_options flex justify-center md:block">
                 <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none px-8 py-6 rounded-3xl">
                     <span>0</span> 
                     <img src="assests/images/heart.png" class="w-8" alt="">
@@ -41,7 +41,7 @@
         <!-- ============================================================================== -->
         
         <!-- Banner section starts here -->
-        <section class="banner font-[Hind_Madurai] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-7 space-y-3">
+        <section class="banner font-[Hind_Madurai] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center px-5 py-7 space-y-3">
             <img src="assests/images/logo-dark.png" class="w-24 mx-auto" alt="">
             <h2 class="font-bold text-[40px] text-white">Emergency Service Directory</h2>
             <p class="font-semibold text-xl text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
@@ -51,10 +51,10 @@
         <!-- ============================================================================== -->
     </header>
 
-    <main class="bg-[#f5fff6] h-[900px]">
+    <main class="bg-[#f5fff6] pt-5 pb-10">
         <section class="main_container w-[87.5%] mx-auto py-10 grid grid-cols-12">
-            <section class="call_list_container col-span-9">
-                <div class="call_card_parent grid grid-cols-3 gap-8">
+            <section class="call_list_container col-span-12 lg:col-span-9">
+                <div class="call_card_parent grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
                         <div class="call_details_photos flex justify-between items-center">
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
@@ -65,14 +65,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">National Emergency Number</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">National Emergency</p>
+                            <h2 class="text-xl font-bold tracking-wide">National Emergency Number</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">National Emergency</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">999</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -87,14 +87,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Police Helpline Number</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Police</p>
+                            <h2 class="text-xl font-bold tracking-wide">Police Helpline Number</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Police</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">999</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Police</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -109,14 +109,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Fire Service Number</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Fire Service</p>
+                            <h2 class="text-xl font-bold tracking-wide">Fire Service Number</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Fire Service</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">999</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Fire</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -131,14 +131,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Ambulance Service</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Ambulance</p>
+                            <h2 class="text-xl font-bold tracking-wide">Ambulance Service</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Ambulance</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">1994-999999</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Health</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -153,14 +153,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Women & Child Helpline</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Women & Child Helpline</p>
+                            <h2 class="text-xl font-bold tracking-wide">Women & Child Helpline</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Women & Child Helpline</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">109</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Help</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -175,14 +175,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Anti-Corruption Helpline</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Anti-Corruption</p>
+                            <h2 class="text-xl font-bold tracking-wide">Anti-Corruption Helpline</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Anti-Corruption</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">106</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Govt.</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -197,14 +197,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Electricity Helpline</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Electricity Outage</p>
+                            <h2 class="text-xl font-bold tracking-wide">Electricity Helpline</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Electricity Outage</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">16216</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Electricity</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -219,14 +219,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Brac Helpline</h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Brac</p>
+                            <h2 class="text-xl font-bold tracking-wide">Brac Helpline</h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Brac</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">16445</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">NGO</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options ">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
@@ -241,14 +241,14 @@
                             </div>
                         </div>
                         <div class="call_details font-[Hind_Madurai]">
-                            <h2 class="text-2xl font-bold tracking-wide">Bangladesh Railway Helpline </h2>
-                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">Bangladesh Railway</p>
+                            <h2 class="text-xl font-bold tracking-wide">Bangladesh Railway Helpline </h2>
+                            <p class="font-[Roboto] text-[#5c5c5c]">Bangladesh Railway</p>
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">163</h1>
                             <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Travel</button>
                         </div>
-                        <div class="copy_call_options space-x-2.5">
+                        <div class="copy_call_options">
                             <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
