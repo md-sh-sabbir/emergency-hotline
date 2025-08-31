@@ -18,23 +18,115 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="w-[87.5%] mx-auto">
-        <nav class="font-[Inter] my-5">
+    <header>
+        <!-- Navbar starts here -->
+        <nav class="w-[87.5%] mx-auto font-[Inter] my-3 py-3 flex justify-between">
             <div class="nav_brand">
                 <img src="assests/images/nav-logo.png" alt="">
             </div>
             <div class="nav_options">
-                <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none px-6 py-6 rounded-3xl">
+                <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none px-8 py-6 rounded-3xl">
                     <span>0</span> 
                     <img src="assests/images/heart.png" class="w-8" alt="">
                 </button>
-                <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none px-4 py-6 rounded-3xl">
+                <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none ml-5 px-6 py-6 rounded-3xl">
                     <span>100</span> 
                     <img src="assests/images/coin.png" class="w-8" alt="">
                 </button>
-                <button class="btn bg-[#00A63E] text-white font-normal border-none px-6 py-6"><span>0</span> Copy</button>
+                <button class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl"><span>0</span> Copy</button>
             </div>
         </nav>
+        <!-- Navbar ends here -->
+
+        <!-- ============================================================================== -->
+        
+        <!-- Banner section starts here -->
+        <section class="banner font-[Hind_Madurai] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-7 space-y-3">
+            <img src="assests/images/logo-dark.png" class="w-24 mx-auto" alt="">
+            <h2 class="font-bold text-[40px] text-white">Emergency Service Directory</h2>
+            <p class="font-semibold text-xl text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </section>
+        <!-- Banner section ends here -->
+        
+        <!-- ============================================================================== -->
     </header>
+
+    <main class="bg-[#f5fff6] h-[900px]">
+        <section class="main_container w-[87.5%] mx-auto py-10 grid grid-cols-12">
+            <section class="call_list_container col-span-9">
+                <div class="call_card_parent grid grid-cols-3 gap-7">
+                    <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
+                        <div class="call_details_photos flex justify-between items-center">
+                            <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
+                                <img src="assests/images/emergency.png" class="w-9" alt="">
+                            </div>
+                            <div class="call_favIcon text-gray-500 text-2xl">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="call_details font-[Hind_Madurai]">
+                            <h2 class="text-2xl font-bold tracking-wide">National Emergency Number</h2>
+                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">National Emergency</p>
+                        </div>
+                        <div class="call_number">
+                            <h1 class="text-3xl font-bold mb-1">999</h1>
+                            <button class="btn outline-none border-transparent text-base text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
+                        </div>
+                        <div class="copy_call_options space-x-2.5">
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
+                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                        </div>
+                    </div>
+                    <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
+                        <div class="call_details_photos flex justify-between items-center">
+                            <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
+                                <img src="assests/images/emergency.png" class="w-9" alt="">
+                            </div>
+                            <div class="call_favIcon text-gray-500 text-2xl">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="call_details font-[Hind_Madurai]">
+                            <h2 class="text-2xl font-bold tracking-wide">National Emergency Number</h2>
+                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">National Emergency</p>
+                        </div>
+                        <div class="call_number">
+                            <h1 class="text-3xl font-bold mb-1">999</h1>
+                            <button class="btn outline-none border-transparent text-base text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
+                        </div>
+                        <div class="copy_call_options space-x-2.5">
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
+                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                        </div>
+                    </div>
+                    <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
+                        <div class="call_details_photos flex justify-between items-center">
+                            <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
+                                <img src="assests/images/emergency.png" class="w-9" alt="">
+                            </div>
+                            <div class="call_favIcon text-gray-500 text-2xl">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="call_details font-[Hind_Madurai]">
+                            <h2 class="text-2xl font-bold tracking-wide">National Emergency Number</h2>
+                            <p class="font-[Roboto] text-lg text-[#5c5c5c]">National Emergency</p>
+                        </div>
+                        <div class="call_number">
+                            <h1 class="text-3xl font-bold mb-1">999</h1>
+                            <button class="btn outline-none border-transparent text-base text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
+                        </div>
+                        <div class="copy_call_options space-x-2.5">
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
+                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
+
+<!-- px-14 py-5 -->
+ <!-- ml-2 px-10 py-5 -->
