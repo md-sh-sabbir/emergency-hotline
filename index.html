@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,57 +11,72 @@
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="assests/css/all.min.css">
     <!-- Daisy UI & Tailwind CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <header>
         <!-- Navbar starts here -->
-        <nav class="w-[87.5%] mx-auto font-[Inter] my-3 py-3 flex flex-col md:flex-row justify-center md:justify-between gap-5">
+
+        <nav
+            class="w-[92%] mx-auto font-[Inter] my-3 py-3 flex flex-col md:flex-row justify-center md:justify-between gap-5">
             <div class="nav_brand flex justify-center md:justify-start">
                 <img src="assests/images/nav-logo.png" alt="">
             </div>
             <div class="nav_options flex justify-center md:block">
                 <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none px-8 py-6 rounded-3xl">
-                    <span>0</span> 
+                    <span id="favourite-count">0</span>
                     <img src="assests/images/heart.png" class="w-8" alt="">
                 </button>
-                <button class="btn bg-[#41ff6b1a] text-black font-black text-base border-none ml-5 px-6 py-6 rounded-3xl">
-                    <span>100</span> 
+                <button
+                    class="btn bg-[#41ff6b1a] text-black font-black text-base border-none ml-5 px-6 py-6 rounded-3xl">
+                    <span>100</span>
                     <img src="assests/images/coin.png" class="w-8" alt="">
                 </button>
-                <button class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl"><span>0</span> Copy</button>
+                <button
+                    class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl"><span>0</span>
+                    Copy</button>
             </div>
         </nav>
+
         <!-- Navbar ends here -->
 
         <!-- ============================================================================== -->
-        
+
         <!-- Banner section starts here -->
-        <section class="banner font-[Hind_Madurai] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center px-5 py-7 space-y-3">
+
+        <section
+            class="banner font-[Hind_Madurai] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center px-5 py-7 space-y-3">
             <img src="assests/images/logo-dark.png" class="w-24 mx-auto" alt="">
             <h2 class="font-bold text-[40px] text-white">Emergency Service Directory</h2>
-            <p class="font-semibold text-xl text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <p class="font-semibold text-xl text-white">Government Emergency Services at Your Fingertip – A Project by
+                Government of the People’s Republic of Bangladesh</p>
         </section>
+
         <!-- Banner section ends here -->
-        
+
         <!-- ============================================================================== -->
     </header>
 
     <main class="bg-[#f5fff6] pt-5 pb-10">
-        <section class="main_container w-[87.5%] mx-auto py-10 grid grid-cols-12">
-            <section class="call_list_container col-span-12 lg:col-span-9">
+        <!-- Call List section starts here -->
+
+        <section class="main_container w-[92%] mx-auto py-10 grid grid-cols-12 gap-8">
+            <section id="call_list_container" class=" col-span-12 lg:col-span-9">
                 <div class="call_card_parent grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
                         <div class="call_details_photos flex justify-between items-center">
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/emergency.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -70,11 +86,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">999</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
                         </div>
-                        <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <div class="copy_call_options">
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -82,7 +102,7 @@
                             <div class="call_photo w-16 h-16 bg-blue-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/police.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -92,11 +112,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">999</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Police</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Police</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -104,7 +128,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/fire-service.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -114,11 +138,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">999</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Fire</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Fire</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -126,7 +154,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/ambulance.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -136,11 +164,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">1994-999999</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Health</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Health</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -148,7 +180,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/emergency.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -158,11 +190,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">109</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Help</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Help</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -170,7 +206,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/emergency.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -180,11 +216,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">106</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Govt.</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Govt.</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -192,7 +232,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/emergency.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -202,11 +242,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">16216</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Electricity</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Electricity</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -214,7 +258,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/emergency.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -224,11 +268,15 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">16445</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">NGO</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">NGO</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
@@ -236,7 +284,7 @@
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
                                 <img src="assests/images/emergency.png" class="w-9" alt="">
                             </div>
-                            <div class="call_favIcon text-gray-500 text-2xl">
+                            <div class="favourite-call text-gray-500 text-2xl cursor-pointer">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
@@ -246,19 +294,56 @@
                         </div>
                         <div class="call_number">
                             <h1 class="text-3xl font-bold mb-1">163</h1>
-                            <button class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Travel</button>
+                            <button
+                                class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Travel</button>
                         </div>
                         <div class="copy_call_options">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%]"><i class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%]"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                                    class="fa-regular fa-copy"></i> Copy</button>
+                            <button
+                                class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
+                                    class="fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Call List section ends here -->
+
+            <!-- ============================================================================== -->
+
+            <!-- Call history side bar sectio starts here -->
+
+            <aside id="call-history-box" class="col-span-12 md:col-span-3">
+                <section class="call-history font-[Inter] min-h-[500px] md:h-full bg-white pt-8 px-7 rounded-xl shadow-md">
+                    <div class="flex justify-between items-center mb-5">
+                        <h2 class="text-xl font-semibold"><span class="text-gray-600 mr-1"><i class="fa-regular fa-clock"></i></span>
+                            Call History</h2>
+                        <button
+                            class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl">Clear</button>
+                    </div>
+
+                    <div>
+                        <div class="bg-[#fafafa] flex justify-between items-center p-5 rounded-lg">
+                            <div>
+                                <h2 class="font-semibold text-md">Fire Service Number</h2>
+                                <p class="font-medium text-md text-[#5c5c5c]">999</p>
+                            </div>
+                            <p class="text-md">10:36:58 AM</p>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Call history side bar sectio ends here -->
+
         </section>
     </main>
+
+    <script src="assests/js/index.js"></script>
 </body>
+
 </html>
 
 <!-- px-14 py-5 -->
- <!-- ml-2 px-10 py-5 -->
+<!-- ml-2 px-10 py-5 -->
