@@ -40,8 +40,7 @@
                     <span id="total-coin">100</span>
                     <img src="assests/images/coin.png" class="w-8" alt="">
                 </button>
-                <button
-                    class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl"><span>0</span>
+                <button class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl"><span id="copy-count">0</span>
                     Copy</button>
             </div>
         </nav>
@@ -70,7 +69,7 @@
 
         <section class="main_container w-[92%] mx-auto py-10 grid grid-cols-12 gap-8">
             <section id="call_list_container" class=" col-span-12 lg:col-span-9">
-                <div class="call_card_parent grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="call-card-container" class="call_card_parent grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="call_card bg-white p-8 space-y-6 rounded-xl shadow-md">
                         <div class="call_details_photos flex justify-between items-center">
                             <div class="call_photo w-16 h-16 bg-red-200 flex justify-center items-center rounded-2xl">
@@ -90,7 +89,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">All</button>
                         </div>
                         <div class="copy_call_options">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -116,7 +115,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Police</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -142,7 +141,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Fire</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -168,7 +167,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Health</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -194,7 +193,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Help</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -220,7 +219,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Govt.</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -246,7 +245,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Electricity</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -272,7 +271,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">NGO</button>
                         </div>
                         <div class="copy_call_options ">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -298,7 +297,7 @@
                                 class="btn outline-none border-transparent font-[Hind_Madurai] text-lg text-[#5c5c5c] bg-gray-100 rounded-3xl">Travel</button>
                         </div>
                         <div class="copy_call_options">
-                            <button class="btn bg-white border-gray-300 text-base font-normal w-[48%] rounded-lg"><i
+                            <button class="btn bg-white hover:bg-gray-200 border-gray-300 text-base font-normal w-[48%] rounded-lg copy-num"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button
                                 class="btn bg-[#00A63E] border-transparent text-white text-base font-normal w-[48%] rounded-lg call-btn"><i
@@ -315,7 +314,7 @@
             <!-- Call history side bar sectio starts here -->
 
             <aside id="call-history-box" class="col-span-12 md:col-span-3">
-                <section class="call-history font-[Inter] min-h-[500px] md:h-full bg-white pt-8 px-7 rounded-xl shadow-md">
+                <section class="call-history font-[Inter] min-h-[500px] md:h-full bg-white pt-8 px-7 pb-5 rounded-xl shadow-md">
                     <div class="flex justify-between items-center mb-5">
                         <h2 class="text-xl font-semibold"><span class="text-gray-600 mr-1"><i class="fa-regular fa-clock"></i></span>
                             Call History</h2>
@@ -344,6 +343,3 @@
 </body>
 
 </html>
-
-<!-- px-14 py-5 -->
-<!-- ml-2 px-10 py-5 -->

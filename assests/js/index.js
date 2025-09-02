@@ -40,9 +40,9 @@ for(let callButton of callBtns){
             const callHistory = document.getElementById('call-history-container')
             const callLog = document.createElement('div')
 
-            callLog.innerHTML = `<div class="bg-[#fafafa] flex justify-between items-center p-5 rounded-lg mb-5">
+            callLog.innerHTML = `<div class="bg-[#fafafa] flex justify-between items-center gap-3 p-5 rounded-lg mb-5">
                                     <div>
-                                        <h2 class="font-semibold text-md">${callTitle}</h2>
+                                        <h2 class="font-semibold text-base">${callTitle}</h2>
                                         <p class="font-medium text-md text-[#5c5c5c]">${callNumber}</p>
                                     </div>
                                     <p class="call-time text-md"></p>
@@ -62,7 +62,21 @@ for(let callButton of callBtns){
     })
 }
 
-// Clear call history
-// document.getElementById('clear-history').addEventListener('click', function(){
-//     callLog.innerHTML = ''
-// })
+// Copy button alert, copy count and copy functionality implements
+let numOfcopyCount = 0
+const copyCount = document.getElementById('copy-count')
+
+document.getElementById('call-card-container').addEventListener('click', function(e){
+    if(e.target.className.includes('copy-num')){
+        const copyButton = e.target
+
+        const numCopy = copyButton.parentNode.parentNode.children[2].children[0].innerText
+        alert('Number has copied : ' + numCopy)
+
+        navigator.clipboard.writeText(numCopy)
+
+        numOfcopyCount++
+        copyCount.innerText = numOfcopyCount
+    }
+})
+
