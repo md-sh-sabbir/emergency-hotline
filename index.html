@@ -37,7 +37,7 @@
                 </button>
                 <button
                     class="btn bg-[#41ff6b1a] text-black font-black text-base border-none ml-5 px-6 py-6 rounded-3xl">
-                    <span>100</span>
+                    <span id="total-coin">100</span>
                     <img src="assests/images/coin.png" class="w-8" alt="">
                 </button>
                 <button
@@ -319,18 +319,18 @@
                     <div class="flex justify-between items-center mb-5">
                         <h2 class="text-xl font-semibold"><span class="text-gray-600 mr-1"><i class="fa-regular fa-clock"></i></span>
                             Call History</h2>
-                        <button
+                        <button id="clear-history"
                             class="btn bg-[#00A63E] text-white text-base font-normal border-none ml-5 px-7 py-6 rounded-3xl">Clear</button>
                     </div>
 
-                    <div>
-                        <div class="bg-[#fafafa] flex justify-between items-center p-5 rounded-lg">
+                    <div id="call-history-container">
+                        <!-- <div class="bg-[#fafafa] flex justify-between items-center p-5 rounded-lg">
                             <div>
                                 <h2 class="font-semibold text-md">Fire Service Number</h2>
                                 <p class="font-medium text-md text-[#5c5c5c]">999</p>
                             </div>
                             <p class="text-md">10:36:58 AM</p>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
             </aside>
